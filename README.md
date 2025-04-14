@@ -26,7 +26,7 @@ git clone https://github.com/Ivancastl/acortador.git
 ### **Paso 2:**
 # Accede al directorio del proyecto.
 ```bash
-cd enlaces
+cd acortador
 ```
 
 ### **Paso 3:**
