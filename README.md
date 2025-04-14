@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ### **Paso 4:**
 # Instala las dependencias necesarias.
 ```bash
-python enlace.py
+python enlaces.py
 ```
 
 📌 Salida del script
