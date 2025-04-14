@@ -41,6 +41,6 @@ pip install -r requirements.txt
 python acortador.py
 ```
 
-##📌 Salida del script
+###📌 Salida del script
 El script imprimirá en consola todas las URLs generadas en el siguiente formato:
 https://tudominio@url-acortada
