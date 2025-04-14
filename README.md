@@ -26,7 +26,7 @@ git clone https://github.com/Ivancastl/acortador.git
 ### **Paso 2:**
 # Accede al directorio del proyecto.
 ```bash
-cd acortador
+cd enlaces
 ```
 
 ### **Paso 3:**
@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ### **Paso 4:**
 # Instala las dependencias necesarias.
 ```bash
-python acortador.py
+python enlace.py
 ```
 
 📌 Salida del script
