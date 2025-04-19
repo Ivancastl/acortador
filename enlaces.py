@@ -4,22 +4,12 @@ import pandas as pd
 import os
 import pyfiglet
 
-<<<<<<< HEAD
-# Arte ASCII
-def mostrar_banner():
-    banner = pyfiglet.figlet_format("URL MASKER")
-    print(banner)
-    print("Sígueme en Twitter: @ivancastl")
-    print("Únete al grupo de Telegram: t.me/OSINTube")
-    print("-" * 60)
-=======
 # 🎨 Mostrar banner ASCII
 def mostrar_banner():
     banner = pyfiglet.figlet_format("FakeNlaces")
     print(banner)
-    print("🔗 Herramienta para ofuscar/acortar enlaces ")
+    print("🔗 Herramienta para ofuscar/acortar enlaces fake. ")
    
->>>>>>> 023f09a (actualizacion)
 
 # Función para acortar una URL usando encurtador.dev
 def acortar_url(url_original):
