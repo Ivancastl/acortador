@@ -4,6 +4,7 @@ import pandas as pd
 import os
 import pyfiglet
 
+<<<<<<< HEAD
 # Arte ASCII
 def mostrar_banner():
     banner = pyfiglet.figlet_format("URL MASKER")
@@ -11,6 +12,14 @@ def mostrar_banner():
     print("Sígueme en Twitter: @ivancastl")
     print("Únete al grupo de Telegram: t.me/OSINTube")
     print("-" * 60)
+=======
+# 🎨 Mostrar banner ASCII
+def mostrar_banner():
+    banner = pyfiglet.figlet_format("FakeNlaces")
+    print(banner)
+    print("🔗 Herramienta para ofuscar/acortar enlaces ")
+   
+>>>>>>> 023f09a (actualizacion)
 
 # Función para acortar una URL usando encurtador.dev
 def acortar_url(url_original):
@@ -24,7 +33,7 @@ def acortar_url(url_original):
         data = response.json()
         return data["urlEncurtada"]
     except requests.exceptions.RequestException as e:
-        print(f"Error al acortar la URL: {e}")
+        print(f"❌ Error al acortar la URL: {e}")
         return None
 
 # Leer archivo de enlaces (Excel o TXT)
@@ -47,7 +56,7 @@ def obtener_enlaces_archivo(nombre_archivo):
             return None
         return enlaces
     except Exception as e:
-        print(f"Error al leer el archivo: {e}")
+        print(f"❌ Error al leer el archivo: {e}")
         return None
 
 # Programa principal
@@ -55,13 +64,13 @@ def main():
     mostrar_banner()
 
     print("¿Qué deseas hacer?")
-    print("1. Acortar un solo enlace manualmente")
-    print("2. Acortar varios enlaces desde un archivo (txt o xlsx)")
+    print("1️⃣ Acortar un solo enlace manualmente")
+    print("2️⃣ Acortar varios enlaces desde un archivo (txt o xlsx)")
     opcion = input("Selecciona 1 o 2: ").strip()
 
     if opcion == "1":
-        dominio_original = input("🔗 Ingresa el dominio que deseas mantener (ejemplo: misitio.com): ").strip()
-        enlace_usuario = input("🌐 Ingresa el enlace que deseas acortar (ejemplo: https://google.com): ").strip()
+        dominio_original = input("🌍 Ingresa el dominio que deseas mantener (ej: misitio.com): ").strip()
+        enlace_usuario = input("🌐 Ingresa el enlace que deseas acortar (ej: https://google.com): ").strip()
 
         enlace_limpio = enlace_usuario.replace("https://", "")
         url_acortada = acortar_url(enlace_limpio)
@@ -73,8 +82,8 @@ def main():
             print("❌ No se pudo acortar la URL.")
 
     elif opcion == "2":
-        nombre_archivo = input("📄 Ingresa el nombre del archivo con enlaces (ejemplo: enlaces.txt o enlaces.xlsx): ").strip()
-        dominio_original = input("🔗 Ingresa el dominio que deseas mantener (ejemplo: misitio.com): ").strip()
+        nombre_archivo = input("📄 Ingresa el nombre del archivo con enlaces (ej: enlaces.txt o enlaces.xlsx): ").strip()
+        dominio_original = input("🌍 Ingresa el dominio que deseas mantener (ej: misitio.com): ").strip()
 
         enlaces = obtener_enlaces_archivo(nombre_archivo)
 
@@ -86,7 +95,7 @@ def main():
                     print(f"✅ URL final: {nueva_url}")
                 else:
                     print(f"❌ No se pudo acortar: {enlace}")
-                print("------------------------")
+                print("─" * 40)
         else:
             print("❌ No se pudieron procesar los enlaces.")
 
