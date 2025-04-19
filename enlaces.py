@@ -2,6 +2,15 @@ import requests
 import json
 import pandas as pd
 import os
+import pyfiglet
+
+# Arte ASCII
+def mostrar_banner():
+    banner = pyfiglet.figlet_format("URL MASKER")
+    print(banner)
+    print("Sígueme en Twitter: @ivancastl")
+    print("Únete al grupo de Telegram: t.me/OSINTube")
+    print("-" * 60)
 
 # Función para acortar una URL usando encurtador.dev
 def acortar_url(url_original):
@@ -43,6 +52,8 @@ def obtener_enlaces_archivo(nombre_archivo):
 
 # Programa principal
 def main():
+    mostrar_banner()
+
     print("¿Qué deseas hacer?")
     print("1. Acortar un solo enlace manualmente")
     print("2. Acortar varios enlaces desde un archivo (txt o xlsx)")
